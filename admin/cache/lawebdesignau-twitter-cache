@@ -1,0 +1,11 @@
+s:923:"<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:google="http://base.google.com/ns/1.0" xml:lang="en-US" xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/" xmlns="http://www.w3.org/2005/Atom" xmlns:twitter="http://api.twitter.com/">
+  <id>tag:search.twitter.com,2005:search/from:lawebdesignau</id>
+  <link type="text/html" href="http://search.twitter.com/search?q=from%3Alawebdesignau" rel="alternate"/>
+  <link type="application/atom+xml" href="http://search.twitter.com/search.atom?q=from%3Alawebdesignau&amp;rpp=5" rel="self"/>
+  <title>from:lawebdesignau - Twitter Search</title>
+  <link type="application/opensearchdescription+xml" href="http://search.twitter.com/opensearch.xml" rel="search"/>
+  <link type="application/atom+xml" href="http://search.twitter.com/search.atom?q=from%3Alawebdesignau&amp;rpp=5&amp;since_id=93243678478438402" rel="refresh"/>
+  <updated>2011-07-19T10:48:32+00:00</updated>
+</feed>
+";
