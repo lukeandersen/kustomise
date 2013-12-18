@@ -29,9 +29,7 @@
 							
 						</footer> <!-- end article footer -->
 					
-					</article> <!-- end article -->
-						
-						<?php comments_template(); ?>
+						</article> <!-- end article -->
 						
 						<?php endwhile; ?>		
 						

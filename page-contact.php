@@ -92,7 +92,7 @@ if(isset($_POST['submitted'])) {
                                             
                                             <div class="clearfix">
                                                 <label for="contactName"><?php _e('Name:', 'framework') ?></label>
-                                                <input type="text" name="contactName" id="contactName" class="xlarge" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="required requiredField" />
+                                                <input type="text" name="contactName" placeholder="Name" id="contactName" class="xlarge" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="required requiredField" />
                                                 <?php if($nameError != '') { ?>
                                                     <span class="error"><?php echo $nameError; ?></span> 
                                                 <?php } ?>
@@ -100,7 +100,7 @@ if(isset($_POST['submitted'])) {
                                 
                                             <div class="clearfix">
                                                 <label for="email"><?php _e('Email:', 'framework') ?></label>
-                                                <input type="email" name="email" id="email" class="xlarge" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" class="required requiredField email" />
+                                                <input type="email" name="email" placeholder="Email" id="email" class="xlarge" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" class="required requiredField email" />
                                                 <?php if($emailError != '') { ?>
                                                     <span class="error"><?php echo $emailError; ?></span>
                                                 <?php } ?>
@@ -108,20 +108,21 @@ if(isset($_POST['submitted'])) {
                                 
                                             <div class="clearfix">
                                                 <label for="commentsText"><?php _e('Message:', 'framework') ?></label>
-                                                <textarea name="comments" id="commentsText" class="required requiredField xxlarge"><?php if(isset($_POST['comments'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['comments']); } else { echo $_POST['comments']; } } ?></textarea>
+                                                <textarea name="comments" id="commentsText" placeholder="Message" class="required requiredField xxlarge"><?php if(isset($_POST['comments'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['comments']); } else { echo $_POST['comments']; } } ?></textarea>
                                                 <?php if($commentError != '') { ?>
                                                     <span class="error"><?php echo $commentError; ?></span> 
                                                 <?php } ?>
                                             </div>
                                 
-                                            <div class="actions">
+                                            <div class="actions clearfix">
                                                 <input type="hidden" name="submitted" id="submitted" value="true" />
                                                 <button class="btn large primary" type="submit"><?php _e('Send Email', 'framework') ?></button>
-                                                <button class="btn large" type="reset">Cancel</button>
                                             </div>
     
                                         </form>
                                     <?php } ?>
+                                    
+                                </div>
                                 
                                 <!--END .contact-form -->
 						
@@ -134,8 +135,6 @@ if(isset($_POST['submitted'])) {
 							</footer> <!-- end article footer -->
 						
 						</article> <!-- end article -->
-						
-						<?php comments_template(); ?>
 						
 						<?php endwhile; ?>	
 						

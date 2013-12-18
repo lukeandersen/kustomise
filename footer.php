@@ -4,23 +4,13 @@
 					<?php if ( is_active_sidebar( 'sidebar3' ) ) : ?>
 
 						<?php dynamic_sidebar( 'sidebar3' ); ?>
-					
-					<?php else : ?>
-
-						<!-- This content shows up if there are no widgets defined in the backend. -->
-						
-						<div class="help">
-						
-							<p>Please activate some Widgets.</p>
-						
-						</div>
 
 					<?php endif; ?>
                 </div>
                 
                 <div id="inner-footer" class="wrap clearfix">
 			
-					<p class="attribution left">&copy; <?php bloginfo('name'); ?> <?php _e("&#8211; website by", "bonestheme"); ?> <a href="http://lawebdesign.com.au" title="Luke Andersen">LAwebdesign</a>.</p>
+					<p class="attribution left">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> <?php _e("&#8211; website by", "bonestheme"); ?> <a href="http://lawebdesign.com.au" title="Luke Andersen">LAwebdesign</a>.</p>
                     
                     <nav>
 						<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>

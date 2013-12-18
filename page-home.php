@@ -36,32 +36,6 @@ Template Name: Home page
 							</footer> <!-- end article footer -->
 						
 						</article> <!-- end article -->
-                        
-                        <div class="clearfix">
-                        	<div class="sixcol left">
-                            	<h3>Some sub title here</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ligula urna, posuere a hendrerit rhoncus, porttitor a augue. Nunc sed erat arcu.</p>
-                            </div>
-                            <div class="sixcol left last">
-                            	<h3>Some sub title here</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ligula urna, posuere a hendrerit rhoncus, porttitor a augue. Nunc sed erat arcu.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="clearfix">
-                        	<div class="fourcol left">
-                            	<h4>Some sub title here</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ligula urna, posuere a hendrerit rhoncus, porttitor a augue. Nunc sed erat arcu.</p>
-                            </div>
-                            <div class="fourcol left">
-                            	<h4>Some sub title here</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ligula urna, posuere a hendrerit rhoncus, porttitor a augue. Nunc sed erat arcu.</p>
-                            </div>
-                            <div class="fourcol left last">
-                            	<h4>Some sub title here</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ligula urna, posuere a hendrerit rhoncus, porttitor a augue. Nunc sed erat arcu.</p>
-                            </div>
-                        </div>
 						
 						<?php endwhile; ?>	
 						

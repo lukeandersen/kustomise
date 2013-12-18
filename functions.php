@@ -47,30 +47,30 @@ you like. Enjoy!
 function bones_register_sidebars() {
     register_sidebar(array(
     	'id' => 'sidebar1',
-    	'name' => 'Main Sidebar',
+    	'name' => 'Page Sidebar',
     	'description' => 'The first (primary) sidebar.',
     	'before_widget' => '<div id="%1$s" class="widget %2$s">',
     	'after_widget' => '</div>',
-    	'before_title' => '<h4 class="widgettitle">',
-    	'after_title' => '</h4>',
+    	'before_title' => '<h3 class="widgettitle">',
+    	'after_title' => '</h3>',
     ));
 	register_sidebar(array(
 		'id' => 'sidebar2',
-		'name' => 'Page Sidebar',
+		'name' => 'Blog Sidebar',
 		'description' => 'Secondary sidebar for pages.',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widget-title">',
-		'after_title' => '</h4>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	));
 	register_sidebar(array(
 		'id' => 'sidebar3',
 		'name' => 'Footer Columns',
-		'description' => 'Footer four columns.',
+		'description' => 'Footer three columns.',
 		'before_widget' => '<div id="%1$s" class="widget %2$s fourcol">',
 		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widget-title">',
-		'after_title' => '</h4>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	));
     
     /* 
@@ -169,35 +169,6 @@ function addlightboxrel_replace ($content)
 	return $content;
 
 }
-
-
-/*-----------------------------------------------------------------------------------*/
-/*	Load Widgets & Shortcodes
-/*-----------------------------------------------------------------------------------*/
-
-// Add the Latest Tweets Custom Widget
-include("lbrary/widget-tweets.php");
-
-// Add the Latest Blog Posts Custom Widget
-include("lbrary/widget-blog.php");
-
-// Add the Flickr Photos Custom Widget
-include("lbrary/widget-flickr.php");
-
-// Add the Custom Video Widget
-include("lbrary/widget-video.php");
-
-// Add the Theme Post types
-include("lbrary/theme-posttypes.php");
-
-// Add the Portfolio Custom Meta
-include("lbrary/portfolio-meta.php");
-
-// Add the Theme Shortcodes
-include("lbrary/theme-shortcodes.php");
-
-// Add the Theme Custom Fields
-include("lbrary/custom-fields.php");
 
 
 /************* Filters that allow shortcodes in Text Widgets *********************/

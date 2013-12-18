@@ -37,20 +37,28 @@
 		
 		<!-- mobile optimized -->
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+        <!--  iPhone Web App Home Screen Icon -->
+        <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon-precomposed.png" />
 		<!-- IE6 toolbar removal -->
 		<meta http-equiv="imagetoolbar" content="false" />
 		<!-- allow pinned sites -->
 		<meta name="application-name" content="<?php bloginfo('name'); ?>" />
 
 		<!-- default stylesheet -->
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/normalize.css">		
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/normalize.css">
+        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+        
+        <!--[if (lt IE 9) & (!IEMobile)]>
+    		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/ie.css">	
+            <script src="<?php echo get_template_directory_uri(); ?>/library/js/libs/css3-mediaqueries.js"></script>
+		<![endif]-->	
 		
 		<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write(unescape('%3Cscript src="<?php echo get_template_directory_uri(); ?>/library/js/libs/jquery-1.6.2.min.js"%3E%3C/script%3E'))</script>
-		
-		<!-- modernizr -->
-		<script src="<?php echo get_template_directory_uri(); ?>/library/js/modernizr.full.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write(unescape('%3Cscript src="<?php echo get_template_directory_uri(); ?>/library/js/libs/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
+        
+        <!-- modernizr (without media query polyfill) -->
+		<script src="<?php echo get_template_directory_uri(); ?>/library/js/libs/modernizr.custom.min.js"></script>
 		
   		<!-- RSS & Pingbacks -->
         <link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?> RSS Feed" href="<?php if (get_option('tz_feedburner')) { echo get_option('tz_feedburner'); } else { bloginfo( 'rss2_url' ); } ?>" />
@@ -59,14 +67,7 @@
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
-		
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-		
-		<!--[if lt IE 9]>
-    		<!-- ie stylesheet -->
-    		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/ie.css">	
-		<![endif]-->
-		
+        
 	</head>
 	
 	<body <?php body_class(); ?>>

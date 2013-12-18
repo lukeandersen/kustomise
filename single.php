@@ -90,7 +90,7 @@
 					
 					</div> <!-- end #main -->
     				
-					<?php get_sidebar(); // sidebar 1 ?>
+					<?php get_sidebar('blog'); // sidebar 1 ?>
     			
     			</div> <!-- #inner-content -->
     			
